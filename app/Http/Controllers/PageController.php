@@ -27,12 +27,20 @@ class PageController extends Controller
                 'users' => User::all(),
                 'assessments' => Assessment::all(),
             ];
-        }else{
+        }elseif(auth()->user()->role == "Kepala Ruang") {
             $props = [
                 'title' => "Dashboard",
-                'completed' => count(Assessment::where('karu_id', auth()->user()->id)->orWhere('katim_id', auth()->user()->id)->whereNotNull('finished_at')->get()),
-                'uncompleted' => count(Assessment::where('karu_id', auth()->user()->id)->orWhere('katim_id', auth()->user()->id)->where('finished_at', null)->get()),
-                'assessments' => Assessment::where('karu_id', auth()->user()->id)->orWhere('katim_id', auth()->user()->id)->orderBy('assessment_date', 'desc')->get(),
+                'completed' => count(Assessment::where('karu_id', auth()->user()->id)->whereNotNull('finished_at')->get()),
+                'uncompleted' => count(Assessment::where('karu_id', auth()->user()->id)->whereNull('finished_at')->get()),
+                'assessments' => Assessment::where('karu_id', auth()->user()->id)->orderBy('assessment_date', 'desc')->get(),
+            ];
+        }
+        elseif(auth()->user()->role == "Ketua Tim") {
+            $props = [
+                'title' => "Dashboard",
+                'completed' => count(Assessment::where('katim_id', auth()->user()->id)->whereNotNull('finished_at')->get()),
+                'uncompleted' => count(Assessment::where('katim_id', auth()->user()->id)->whereNull('finished_at')->get()),
+                'assessments' => Assessment::where('katim_id', auth()->user()->id)->orderBy('assessment_date', 'desc')->get(),
             ];
         }
         return view('dashboard', $props);

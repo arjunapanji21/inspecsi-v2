@@ -25,4 +25,8 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/assessment/submit', [AssessmentController::class, 'submit_an_assessment'])->name('submit_an_assessment');
     Route::get('/assessment/{id}/data-pasien', [AssessmentController::class, 'data_pasien'])->name('data_pasien');
     Route::post('/assessment/{id}/data-pasien/submit', [AssessmentController::class, 'data_pasien_submit'])->name('data_pasien_submit');
+    Route::get('/assessment/{id}/perkembangan-pasien', [AssessmentController::class, 'perkembangan_pasien'])->name('perkembangan_pasien');
+    Route::post('/assessment/{id}/perkembangan-pasien/submit', [AssessmentController::class, 'perkembangan_pasien_submit'])->name('perkembangan_pasien_submit');
+    Route::get('/assessment/{id}/penilaian', [AssessmentController::class, 'penilaian'])->name('penilaian');
+    Route::post('/assessment/{id}/penilaian/submit', [AssessmentController::class, 'penilaian_submit'])->name('penilaian_submit');
 });

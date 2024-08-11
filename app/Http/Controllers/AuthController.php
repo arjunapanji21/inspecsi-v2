@@ -13,6 +13,7 @@ class AuthController extends Controller
             'username' => ['required'],
             'password' => ['required'],
         ]);
+        $credentials['username'] = strtolower($credentials['username']);
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
             return redirect(route('dashboard'));

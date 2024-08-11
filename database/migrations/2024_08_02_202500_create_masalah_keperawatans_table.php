@@ -16,6 +16,8 @@ return new class extends Migration
             $table->bigInteger('kategori_masalah_keperawatan_id');
             $table->string('kode');
             $table->string('nama');
+            $table->text('slki')->nullable();
+            $table->text('intervensi')->nullable();
             $table->timestamps();
         });
     }

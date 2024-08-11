@@ -68,6 +68,7 @@
                             <th scope="col" class="px-4 py-3">KARU</th>
                             <th scope="col" class="px-4 py-3">KATIM</th>
                             <th scope="col" class="px-4 py-3">Status</th>
+                            <th scope="col" class="px-4 py-3 text-right">Score</th>
                             <th scope="col" class="px-4 py-3">
                                 <span class="sr-only">Actions</span>
                             </th>
@@ -79,7 +80,8 @@
                             <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">{{date('d/m/Y', strtotime($assessment->assessment_date))}}</th>
                             <td class="px-4 py-3">{{$assessment->karu->name}}</td>
                             <td class="px-4 py-3">{{$assessment->katim->name}}</td>
-                            <td class="px-4 py-3"><span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">{{$assessment->finished_at == null ? 'Uncompleted' : $assessment->finished_at}}</span></td>
+                            <td class="px-4 py-3"><span class="@if($assessment->finished_at != null) bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300 @else bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 @endif">{{$assessment->finished_at == null ? 'Uncompleted' : 'Completed'}}</span></td>
+                            <td class="px-4 py-3 text-right font-semibold">{{$assessment->score}}</td>
                             <td class="px-4 py-3 flex items-center justify-end">
                                 <button id="assessment-{{$assessment->id}}-button" data-dropdown-toggle="assessment-{{$assessment->id}}" class="inline-flex items-center p-0.5 text-sm font-medium text-center text-gray-500 hover:text-gray-800 rounded-lg focus:outline-none dark:text-gray-400 dark:hover:text-gray-100" type="button">
                                     <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -92,9 +94,12 @@
                                             <a href="{{route('data_pasien', $assessment->id)}}" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Data Pasien</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Catatan</a>
+                                            <a href="{{route('perkembangan_pasien', $assessment->id)}}" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Perkembangan</a>
                                         </li>
                                     </ul>
+                                    <div class="py-1">
+                                        <a href="{{route('penilaian', $assessment->id)}}" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Penilaian</a>
+                                    </div>
                                     @if(auth()->user()->role == "Super Admin")
                                     <div class="py-1">
                                         <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Hapus</a>

@@ -223,7 +223,7 @@
                   <span class="ml-3">Assessments</span>
                 </a>
               </li>
-              <li>
+              {{-- <li>
                 <a
                   href="{{route('archives')}}"
                   class="flex items-center p-2 text-base font-medium rounded-lg transition duration-75 group @if($title == 'Archives') text-white bg-primary-700 @else text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-800 dark:text-white @endif"
@@ -244,7 +244,7 @@
                   </svg>
                   <span class="flex-1 ml-3 whitespace-nowrap">Archives</span>
                 </a>
-              </li>
+              </li> --}}
               @if(auth()->user()->role == "Admin" || auth()->user()->role == "Super Admin")
               <li>
                 <a
@@ -320,4 +320,5 @@
         </main>
       </div>
 </body>
+@yield('script')
 </html>
