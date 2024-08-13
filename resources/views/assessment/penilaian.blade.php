@@ -11,19 +11,19 @@
                 <div class="grid gap-4 grid-cols-2 sm:gap-6">
                     <div class="w-full">
                         <label for="karu" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Kepala Ruang</label>
-                        <input type="text" name="karu" id="karu" class="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{$assessment->karu->name}}" placeholder="Nama Kepala Ruang" disabled>
+                        <input type="text" name="karu" id="karu" class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{$assessment->karu->name}}" placeholder="Nama Kepala Ruang" disabled>
                     </div>
                     <div class="w-full">
                         <label for="katim" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ketua Tim</label>
-                        <input type="text" name="katim" id="katim" class="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{$assessment->katim->name}}" placeholder="Nama Ketua Tim" disabled>
+                        <input type="text" name="katim" id="katim" class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{$assessment->katim->name}}" placeholder="Nama Ketua Tim" disabled>
                     </div>
                     <div class="w-full">
                         <label for="ruangan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ruangan</label>
-                        <input type="text" name="ruangan" id="ruangan" class="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{$assessment->karu->room->name}}" placeholder="Nama Ruangan" disabled>
+                        <input type="text" name="ruangan" id="ruangan" class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{$assessment->karu->room->name}}" placeholder="Nama Ruangan" disabled>
                     </div>
                     <div class="w-full">
                         <label for="tanggal" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tanggal</label>
-                        <input type="date" name="tanggal" id="tanggal" class="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{$assessment->assessment_date}}" placeholder="Tanggal" disabled>
+                        <input type="date" name="tanggal" id="tanggal" class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{$assessment->assessment_date}}" placeholder="Tanggal" disabled>
                     </div>
                 </div>
             </div>
@@ -228,15 +228,20 @@
                     <h3 class=" font-bold text-gray-900 dark:text-white">Lengkap = <span id="lengkap">0</span></h3>
                     <h3 class=" font-bold text-gray-900 dark:text-white">Tidak Lengkap = <span id="tidak_lengkap">22</span></h3>
                 </div>
-                <h3 class=" text-right font-bold text-gray-900 dark:text-white">Score Penilaian: <br/><span class="text-4xl" id="result">{{$assessment->score}}</span></h3>
+                <h3 class=" text-right font-bold text-gray-900 dark:text-white">Score Penilaian: <br/><span class="text-4xl" id="result">{{$penilaian->score}}</span></h3>
                 <input type="hidden" id="score" name="score" value="" readonly>
+            </div>
+
+            <div class="border-b border-b-gray-300 pb-8 mb-4">
+                <label for="rekomendasi" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Rekomendasi dari KARU</label>
+                <textarea id="rekomendasi" name="rekomendasi" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">{{$penilaian->rekomendasi}}</textarea>
             </div>
 
             <div class="w-full flex gap-2 justify-end">
                 <button type="submit" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
                     Simpan
                 </button>
-                <a href="{{route('assessments')}}" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-primary-700 rounded-lg focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-900 hover:bg-gray-200">
+                <a href="{{route('assessments')}}" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-primary-700 rounded-lg focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-900 hover:bg-gray-100">
                     Kembali
                 </a>
             </div>
@@ -249,19 +254,19 @@
             <div class="grid gap-4 grid-cols-2 sm:gap-6">
                 <div class="w-full">
                     <label for="karu" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Kepala Ruang</label>
-                    <input type="text" name="karu" id="karu" class="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{$assessment->karu->name}}" placeholder="Nama Kepala Ruang" disabled>
+                    <input type="text" name="karu" id="karu" class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{$assessment->karu->name}}" placeholder="Nama Kepala Ruang" disabled>
                 </div>
                 <div class="w-full">
                     <label for="katim" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ketua Tim</label>
-                    <input type="text" name="katim" id="katim" class="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{$assessment->katim->name}}" placeholder="Nama Ketua Tim" disabled>
+                    <input type="text" name="katim" id="katim" class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{$assessment->katim->name}}" placeholder="Nama Ketua Tim" disabled>
                 </div>
                 <div class="w-full">
                     <label for="ruangan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ruangan</label>
-                    <input type="text" name="ruangan" id="ruangan" class="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{$assessment->karu->room->name}}" placeholder="Nama Ruangan" disabled>
+                    <input type="text" name="ruangan" id="ruangan" class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{$assessment->karu->room->name}}" placeholder="Nama Ruangan" disabled>
                 </div>
                 <div class="w-full">
                     <label for="tanggal" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tanggal</label>
-                    <input type="date" name="tanggal" id="tanggal" class="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{$assessment->assessment_date}}" placeholder="Tanggal" disabled>
+                    <input type="date" name="tanggal" id="tanggal" class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{$assessment->assessment_date}}" placeholder="Tanggal" disabled>
                 </div>
             </div>
         </div>
@@ -466,9 +471,15 @@
                 <h3 class=" font-bold text-gray-900 dark:text-white">Lengkap = <span id="lengkap">0</span></h3>
                 <h3 class=" font-bold text-gray-900 dark:text-white">Tidak Lengkap = <span id="tidak_lengkap">22</span></h3>
             </div>
-            <h3 class=" text-right font-bold text-gray-900 dark:text-white">Score Penilaian: <br/><span class="text-4xl" id="result">{{$assessment->score}}</span></h3>
+            <h3 class=" text-right font-bold text-gray-900 dark:text-white">Score Penilaian: <br/><span class="text-4xl" id="result">{{$penilaian->score}}</span></h3>
             <input type="hidden" id="score" name="score" value="" readonly>
         </div>
+
+        <div class="border-b border-b-gray-300 pb-8 mb-4">
+            <label for="rekomendasi" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Rekomendasi dari KARU</label>
+            <textarea id="rekomendasi" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  disabled>{{$penilaian->rekomendasi}}</textarea>
+        </div>
+
         <div class="w-full flex gap-2 justify-end">
             <a href="{{route('assessments')}}" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
                 Kembali

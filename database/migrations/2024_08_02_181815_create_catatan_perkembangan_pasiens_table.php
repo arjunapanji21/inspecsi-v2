@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->bigInteger('data_assessment_id');
             $table->string('tanggal');
+            $table->string('masalah_keperawatan');
             $table->string('implementasi');
             $table->string('subjektif')->nullable();
             $table->string('objek')->nullable();

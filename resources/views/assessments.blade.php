@@ -73,7 +73,7 @@
                                     </div>
                                     @if(auth()->user()->role == "Super Admin")
                                     <div class="py-1">
-                                        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Hapus</a>
+                                        <a href="{{route('assessment_delete', $assessment->id)}}" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Hapus</a>
                                     </div>
                                     @endif
                                 </div>
@@ -127,4 +127,22 @@
         </div>
     </div>
     </section>
+@endsection
+
+@section('script')
+<script type="module">
+    $("#search").keyup(function () {
+        var value = this.value.toLowerCase().trim();
+
+        $("table tr").each(function (index) {
+            if (!index) return;
+            $(this).find("td").each(function () {
+                var id = $(this).text().toLowerCase().trim();
+                var not_found = (id.indexOf(value) == -1);
+                $(this).closest('tr').toggle(!not_found);
+                return not_found;
+            });
+        });
+    });
+</script>
 @endsection

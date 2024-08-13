@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Assessment;
 use App\Models\Hospital;
+use App\Models\KategoriMasalahKeperawatan;
+use App\Models\MasalahKeperawatan;
 use App\Models\Room;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -75,32 +77,5 @@ class PageController extends Controller
             'archives' => Assessment::where('archived', true)->get(),
         ];
         return view('archives', $props);
-    }
-
-    public function users(){
-        $props = [
-            'title' => "Users",
-            'superadmins' => User::where('role', 'Super Admin')->orderBy('name', 'asc')->get(),
-            'admins' => User::where('role', 'Admin')->orderBy('name', 'asc')->get(),
-            'karus' => User::where('role', 'Kepala Ruang')->orderBy('name', 'asc')->get(),
-            'katims' => User::where('role', 'Ketua Tim')->orderBy('name', 'asc')->get(),
-        ];
-        return view('users', $props);
-    }
-
-    public function hospitals(){
-        $props = [
-            'title' => "Hospitals",
-            'hospitals' => Hospital::orderBy('name', 'asc')->get(),
-        ];
-        return view('hospitals', $props);
-    }
-
-    public function rooms(){
-        $props = [
-            'title' => "Rooms",
-            'rooms' => Room::orderBy('name', 'asc')->get(),
-        ];
-        return view('rooms', $props);
     }
 }

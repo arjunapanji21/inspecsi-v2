@@ -7,6 +7,7 @@ use App\Models\CatatanPerkembanganPasien;
 use App\Models\DataAssessment;
 use App\Models\InstrumenPenilaian;
 use App\Models\KategoriMasalahKeperawatan;
+use App\Models\MasalahKeperawatan;
 use Illuminate\Http\Request;
 
 class AssessmentController extends Controller
@@ -21,22 +22,45 @@ class AssessmentController extends Controller
         DataAssessment::create([
             'assessment_id' => $assessment_id,
         ])->id;
-        return redirect()->route('assessments')->with('success', '
-        Berhasil membuat assessment!');
+        InstrumenPenilaian::create([
+            'assessment_id' => $assessment_id,
+            'karu_id' => $request['karu_id'],
+            'katim_id' => $request['katim_id'],
+        ])->id;
+        return redirect()->route('assessments')->with('success', 'Berhasil membuat assessment!');
     }
 
     public function data_pasien($id){
-        $props = [
-            'title' => "Data Pasien",
-            'data_pasien' => DataAssessment::find($id),
-            'kategori_masalah' => KategoriMasalahKeperawatan::all(),
-        ];
-        return view('assessment/data_pasien', $props);
+        if(auth()->user()->role == "Ketua Tim"){
+            $props = [
+                'title' => "Data Pasien",
+                'data_pasien' => DataAssessment::find($id),
+                'kategori_masalah' => KategoriMasalahKeperawatan::all(),
+            ];
+            return view('assessment/data_pasien', $props);
+        }
+        else {
+            $data_pasien = DataAssessment::find($id);
+            $diagnosa = [];
+            foreach(MasalahKeperawatan::all() as $row){
+                foreach(explode("#", $data_pasien->masalah_keperawatan) as $kode){
+                    if($kode == $row->kode){
+                        array_push($diagnosa, $row);
+                    }
+                }
+            }
+            $props = [
+                'title' => "Data Pasien",
+                'data_pasien' => $data_pasien,
+                'diagnosa' => $diagnosa,
+            ];
+            return view('assessment/data_pasien', $props);
+        }
     }
 
     public function data_pasien_submit($id, Request $request){
         $form = $request->all();
-
+        $form['masalah_keperawatan'] = implode('#', $form['masalah_keperawatan']);
         $data = DataAssessment::find($id);
         $data->update($form);
         $assessment = Assessment::find($data->assessment_id);
@@ -48,10 +72,17 @@ class AssessmentController extends Controller
     }
 
     public function perkembangan_pasien($id){
+        $data_assessment = DataAssessment::find($id);
+        $diagnosa = [];
+        foreach(explode("#", $data_assessment->masalah_keperawatan) as $kode){
+            $masalah_keperawatan = MasalahKeperawatan::where('kode', $kode)->first();
+            array_push($diagnosa, $masalah_keperawatan);
+        }
         $props = [
             'title' => "Catatan Perkembangan Pasien",
-            'data_assessment_id' => $id,
-            'perkembangan_pasien' => CatatanPerkembanganPasien::where('data_assessment_id', $id)->get()
+            'diagnosa' => $diagnosa,
+            'data_assessment' => $data_assessment,
+            'perkembangan_pasien' => CatatanPerkembanganPasien::where('data_assessment_id', $data_assessment->id)->get()
         ];
         return view('assessment/perkembangan_pasien', $props);
     }
@@ -92,5 +123,17 @@ class AssessmentController extends Controller
         
         return redirect()->route('penilaian', $id)->with('success', '
         Data assessment berhasil di simpan!');
+    }
+
+    public function assessment_delete($id){
+        $assessment = Assessment::find($id);
+        $penilaian = InstrumenPenilaian::where('assessment_id', $assessment->id)->first();
+        $penilaian->delete();
+        $data_assessment = DataAssessment::where('assessment_id', $assessment->id)->first();
+        $data_assessment->delete();
+        $assessment->delete();
+        
+        return redirect()->route('assessments')->with('success', '
+        Assessment berhasil di hapus!');
     }
 }

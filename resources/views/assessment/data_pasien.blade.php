@@ -12,23 +12,23 @@
                     
                     <div class="w-full">
                         <label for="nama_pasien" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama Pasien</label>
-                        <input type="text" name="nama_pasien" id="nama_pasien" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('nama_pasien', $data_pasien->nama_pasien)}}" placeholder="Nama pasien" required="">
+                        <input type="text" name="nama_pasien" id="nama_pasien" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('nama_pasien', $data_pasien->nama_pasien)}}" placeholder="Nama pasien" >
                     </div>
                     <div class="w-full">
                         <label for="no_rm" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">No. RM</label>
-                        <input type="text" name="no_rm" id="no_rm" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('no_rm', $data_pasien->no_rm)}}" placeholder="No. RM" required="">
+                        <input type="text" name="no_rm" id="no_rm" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('no_rm', $data_pasien->no_rm)}}" placeholder="No. RM" >
                     </div>
                     <div class="w-full">
                         <label for="tgl_lahir" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tanggal Lahir</label>
-                        <input type="date" name="tgl_lahir" id="tgl_lahir" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('tgl_lahir', $data_pasien->tgl_lahir)}}" placeholder="Tanggal lahir pasien" required="">
+                        <input type="date" name="tgl_lahir" id="tgl_lahir" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('tgl_lahir', $data_pasien->tgl_lahir)}}" placeholder="Tanggal lahir pasien" >
                     </div>
                     <div class="w-full">
                         <label for="diagnosa_medis" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Diagnosa Medis</label>
-                        <input type="text" name="diagnosa_medis" id="diagnosa_medis" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('diagnosa_medis', $data_pasien->diagnosa_medis)}}" placeholder="Diagnosa medis pasien" required="">
+                        <input type="text" name="diagnosa_medis" id="diagnosa_medis" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('diagnosa_medis', $data_pasien->diagnosa_medis)}}" placeholder="Diagnosa medis pasien" >
                     </div>
                     <div class="w-full">
                         <label for="ruang_rawat" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ruang Rawat</label>
-                        <input type="text" name="ruang_rawat" id="ruang_rawat" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('ruang_rawat', $data_pasien->ruang_rawat)}}" placeholder="Ruang rawat" required="">
+                        <input type="text" name="ruang_rawat" id="ruang_rawat" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('ruang_rawat', $data_pasien->ruang_rawat)}}" placeholder="Ruang rawat" >
                     </div>
                     <div class="w-full">
                         <label for="pendidikan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pendidikan</label>
@@ -46,11 +46,11 @@
                     </div>
                     <div class="w-full">
                         <label for="tgl_masuk" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tanggal Masuk</label>
-                        <input type="date" name="tgl_masuk" id="tgl_masuk" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('tgl_masuk', $data_pasien->tgl_masuk)}}" placeholder="Tanggal masuk" required="">
+                        <input type="date" name="tgl_masuk" id="tgl_masuk" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('tgl_masuk', $data_pasien->tgl_masuk)}}" placeholder="Tanggal masuk" >
                     </div>
                     <div class="w-full">
                         <label for="tgl_assessment" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tanggal Assessment</label>
-                        <input type="date" name="tgl_assessment" id="tgl_assessment" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('tgl_assessment', $data_pasien->tgl_assessment)}}" placeholder="Tanggal assessment" required="">
+                        <input type="date" name="tgl_assessment" id="tgl_assessment" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('tgl_assessment', $data_pasien->tgl_assessment)}}" placeholder="Tanggal assessment" >
                     </div>
                 </div>
             </div>
@@ -61,11 +61,11 @@
                     
                     <div class="w-full">
                         <label for="keluhan_utama" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Keluhan Utama</label>
-                        <input type="text" name="keluhan_utama" id="keluhan_utama" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('keluhan_utama', $data_pasien->keluhan_utama)}}" placeholder="Keluhan utama pasien" required="">
+                        <input type="text" name="keluhan_utama" id="keluhan_utama" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('keluhan_utama', $data_pasien->keluhan_utama)}}" placeholder="Keluhan utama pasien" >
                     </div>
                     <div class="w-full">
                         <label for="riwayat_kesehatan_sekarang" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Riwayat Kesehatan Sekarang</label>
-                        <input type="text" name="riwayat_kesehatan_sekarang" id="riwayat_kesehatan_sekarang" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('riwayat_kesehatan_sekarang', $data_pasien->riwayat_kesehatan_sekarang)}}" placeholder="Riwayat kesehatan pasien sekarang" required="">
+                        <input type="text" name="riwayat_kesehatan_sekarang" id="riwayat_kesehatan_sekarang" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('riwayat_kesehatan_sekarang', $data_pasien->riwayat_kesehatan_sekarang)}}" placeholder="Riwayat kesehatan pasien sekarang" >
                     </div>
                     <div class="w-full">
                         <label for="penyakit_genetik" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Penyakit Genetik</label>
@@ -105,7 +105,7 @@
                     </div>
                     <div class="w-full">
                         <label for="riwayat_kesehatan_keluarga" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Riwayat Kesehatan Keluarga</label>
-                        <input type="text" name="riwayat_kesehatan_keluarga" id="riwayat_kesehatan_keluarga" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('riwayat_kesehatan_keluarga', $data_pasien->riwayat_kesehatan_keluarga)}}" placeholder="Riwayat kesehatan keluarga pasien" required="">
+                        <input type="text" name="riwayat_kesehatan_keluarga" id="riwayat_kesehatan_keluarga" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('riwayat_kesehatan_keluarga', $data_pasien->riwayat_kesehatan_keluarga)}}" placeholder="Riwayat kesehatan keluarga pasien" >
                     </div>
                     <div class="w-full">
                         <label for="auto_anamnesa_pasien" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Auto Anamnesa Pasien</label>
@@ -116,7 +116,7 @@
                     </div>
                     <div class="w-full">
                         <label for="nama_pemberi_informasi" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama Pemberi Informasi</label>
-                        <input type="text" name="nama_pemberi_informasi" id="nama_pemberi_informasi" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('nama_pemberi_informasi', $data_pasien->nama_pemberi_informasi)}}" placeholder="Nama Pemberi Informasi" required="">
+                        <input type="text" name="nama_pemberi_informasi" id="nama_pemberi_informasi" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('nama_pemberi_informasi', $data_pasien->nama_pemberi_informasi)}}" placeholder="Nama Pemberi Informasi" >
                     </div>
                 </div>
             </div>
@@ -171,27 +171,27 @@
                     </div>
                     <div class="w-full">
                         <label for="tekanan_darah" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tekanan Darah Pasien</label>
-                        <input type="text" name="tekanan_darah" id="tekanan_darah" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('tekanan_darah', $data_pasien->tekanan_darah)}}" placeholder="Tekanan Darah Pasien" required>
+                        <input type="text" name="tekanan_darah" id="tekanan_darah" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('tekanan_darah', $data_pasien->tekanan_darah)}}" placeholder="Tekanan Darah Pasien" >
                     </div>
                     <div class="w-full">
                         <label for="suhu" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Suhu Tubuh Pasien</label>
-                        <input type="text" name="suhu" id="suhu" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('suhu', $data_pasien->suhu)}}" placeholder="Suhu Tubuh Pasien" required>
+                        <input type="text" name="suhu" id="suhu" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('suhu', $data_pasien->suhu)}}" placeholder="Suhu Tubuh Pasien" >
                     </div>
                     <div class="w-full">
                         <label for="nadi" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Denyut Nadi Pasien</label>
-                        <input type="text" name="nadi" id="nadi" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('nadi', $data_pasien->nadi)}}" placeholder="Denyut Nadi Pasien" required>
+                        <input type="text" name="nadi" id="nadi" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('nadi', $data_pasien->nadi)}}" placeholder="Denyut Nadi Pasien" >
                     </div>
                     <div class="w-full">
-                        <label for="pernapasan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pernapasan Pasien</label>
-                        <input type="text" name="pernapasan" id="pernapasan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('pernapasan', $data_pasien->pernapasan)}}" placeholder="Pernapasan Pasien" required>
+                        <label for="pernapasan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Frekuensi Nyeri</label>
+                        <input type="text" name="pernapasan" id="pernapasan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('pernapasan', $data_pasien->pernapasan)}}" placeholder="Pernapasan Pasien" >
                     </div>
                     <div class="w-full">
                         <label for="spo2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">SPO2</label>
-                        <input type="text" name="spo2" id="spo2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('spo2', $data_pasien->spo2)}}" placeholder="SPO2" required>
+                        <input type="text" name="spo2" id="spo2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('spo2', $data_pasien->spo2)}}" placeholder="SPO2" >
                     </div>
                     <div class="w-full">
                         <label for="crt" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">CRT</label>
-                        <input type="text" name="crt" id="crt" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('crt', $data_pasien->crt)}}" placeholder="CRT" required>
+                        <input type="text" name="crt" id="crt" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('crt', $data_pasien->crt)}}" placeholder="CRT">
                     </div>
                     <div class="w-full">
                         <label for="akral" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Akral</label>
@@ -252,11 +252,11 @@
                     </div>
                     <div class="w-full">
                         <label for="tb" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tinggi Badan</label>
-                        <input type="text" name="tb" id="tb" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('tb', $data_pasien->tb)}}" placeholder="Tinggi badan pasien" required>
+                        <input type="text" name="tb" id="tb" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('tb', $data_pasien->tb)}}" placeholder="Tinggi badan pasien" >
                     </div>
                     <div class="w-full">
                         <label for="bb" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Berat Badan</label>
-                        <input type="text" name="bb" id="bb" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('bb', $data_pasien->bb)}}" placeholder="Berat badan pasien" required>
+                        <input type="text" name="bb" id="bb" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('bb', $data_pasien->bb)}}" placeholder="Berat badan pasien" >
                     </div>
                     <div class="w-full">
                         <label for="imt" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">IMT</label>
@@ -310,11 +310,11 @@
                     </div>
                     <div class="w-full">
                         <label for="pola_tidur" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pola Tidur</label>
-                        <input type="text" name="pola_tidur" id="pola_tidur" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('pola_tidur', $data_pasien->pola_tidur)}}" placeholder="Pola Tidur Pasien" required>
+                        <input type="text" name="pola_tidur" id="pola_tidur" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('pola_tidur', $data_pasien->pola_tidur)}}" placeholder="Pola Tidur Pasien" >
                     </div>
                     <div class="w-full">
                         <label for="durasi_tidur" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Durasi Tidur</label>
-                        <input type="text" name="durasi_tidur" id="durasi_tidur" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('durasi_tidur', $data_pasien->durasi_tidur)}}" placeholder="Durasi Tidur Pasien" required>
+                        <input type="text" name="durasi_tidur" id="durasi_tidur" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('durasi_tidur', $data_pasien->durasi_tidur)}}" placeholder="Durasi Tidur Pasien" >
                     </div>
                     <div class="w-full">
                         <label for="gangguan_tidur" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Gangguan Tidur</label>
@@ -395,15 +395,15 @@
                 <div class="grid gap-4 lg:grid-cols-2 sm:gap-6">
                     <div class="w-full">
                         <label for="pekerjaan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Status Pekerjaan Pasien</label>
-                        <input type="text" name="pekerjaan" id="pekerjaan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('pekerjaan', $data_pasien->pekerjaan)}}" placeholder="Status Pekerjaan Pasien" required>
+                        <input type="text" name="pekerjaan" id="pekerjaan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('pekerjaan', $data_pasien->pekerjaan)}}" placeholder="Status Pekerjaan Pasien" >
                     </div>
                     <div class="w-full">
                         <label for="pembiayaan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pembiayaan / Jaminan Kesehatan</label>
-                        <input type="text" name="pembiayaan" id="pembiayaan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('pembiayaan', $data_pasien->pembiayaan)}}" placeholder="Pembiayaan / Jaminan Kesehatan" required>
+                        <input type="text" name="pembiayaan" id="pembiayaan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('pembiayaan', $data_pasien->pembiayaan)}}" placeholder="Pembiayaan / Jaminan Kesehatan" >
                     </div>
                     <div class="w-full">
                         <label for="pj_pasien" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Penanggung Jawab Pasien</label>
-                        <input type="text" name="pj_pasien" id="pj_pasien" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('pj_pasien', $data_pasien->pj_pasien)}}" placeholder="Penanggung Jawab Pasien" required>
+                        <input type="text" name="pj_pasien" id="pj_pasien" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('pj_pasien', $data_pasien->pj_pasien)}}" placeholder="Penanggung Jawab Pasien" >
                     </div>
                 </div>
             </div>
@@ -456,7 +456,12 @@
                     </div>
                     <div class="w-full">
                         <label for="skala_nyeri" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Skala Nyeri</label>
-                        <input type="text" name="skala_nyeri" id="skala_nyeri" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('skala_nyeri', $data_pasien->skala_nyeri)}}" placeholder="Kosongkan bila tidak ada">
+                        <select  id="skala_nyeri" name="skala_nyeri" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                            <option value="0" selected>0</option>
+                            @for($i=1;$i<=10;$i++)
+                            <option @if($data_pasien->skala_nyeri == $i) selected @endif value="{{$i}}">{{$i}}</option>
+                            @endfor
+                        </select>
                     </div>
                     <div class="w-full">
                         <label for="durasi_nyeri" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Durasi Nyeri</label>
@@ -538,19 +543,19 @@
                 <div class="grid gap-4 lg:grid-cols-2 sm:gap-6">
                     <div class="w-full">
                         <label for="data_subjektif" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Data Subjektif</label>
-                        <input type="text" name="data_subjektif" id="data_subjektif" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('data_subjektif', $data_pasien->data_subjektif)}}" placeholder="Hasil Analisis Data Subjektif" required>
+                        <input type="text" name="data_subjektif" id="data_subjektif" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('data_subjektif', $data_pasien->data_subjektif)}}" placeholder="Hasil Analisis Data Subjektif" >
                     </div>
                     <div class="w-full">
                         <label for="data_objektif" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Data Objektif</label>
-                        <input type="text" name="data_objektif" id="data_objektif" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('data_objektif', $data_pasien->data_objektif)}}" placeholder="Hasil Analisis Data Objektif" required>
+                        <input type="text" name="data_objektif" id="data_objektif" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('data_objektif', $data_pasien->data_objektif)}}" placeholder="Hasil Analisis Data Objektif" >
                     </div>
                     <div class="w-full">
                         <label for="penyebab_etiologi" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Penyebab Etiologi</label>
-                        <input type="text" name="penyebab_etiologi" id="penyebab_etiologi" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('penyebab_etiologi', $data_pasien->penyebab_etiologi)}}" placeholder="Hasil Analisis Penyebab Etiologi" required>
+                        <input type="text" name="penyebab_etiologi" id="penyebab_etiologi" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('penyebab_etiologi', $data_pasien->penyebab_etiologi)}}" placeholder="Hasil Analisis Penyebab Etiologi" >
                     </div>
                     <div class="w-full">
                         <label for="masalah" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Masalah Pada Pasien</label>
-                        <input type="text" name="masalah" id="masalah" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('masalah', $data_pasien->masalah)}}" placeholder="Hasil Analisis Masalah Pasien" required>
+                        <input type="text" name="masalah" id="masalah" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('masalah', $data_pasien->masalah)}}" placeholder="Hasil Analisis Masalah Pasien" >
                     </div>
                 </div>
             </div>
@@ -588,30 +593,17 @@
                     </div>
                     <div class="w-full">
                         <label for="masalah_keperawatan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Diagnosa Pasien</label>
-                        <select  id="masalah_keperawatan" name="masalah_keperawatan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                            <option disabled selected>Pilih diagnosa:</option>
+                        <select  id="masalah_keperawatan" name="masalah_keperawatan[]" class="select2-responsive bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" multiple="multiple">
                             @foreach($kategori_masalah as $row)
                             <option disabled class="capitalize font-bold">{{$row->nama}}</option>
                             @foreach($row->item as $item)
-                            <option @if($data_pasien->masalah_keperawatan == $item->kode) selected @endif value="{{$item->kode}}" class="capitalize">{{$item->kode." - ".$item->nama}}</option>
+                            @foreach(explode("#", $data_pasien->masalah_keperawatan) as $kode)
+                            <option @if($kode == $item->kode) selected @endif value="{{$item->kode}}" class="capitalize">{{$item->kode." - ".$item->nama}}</option>
+                            @endforeach
                             @endforeach
                             @endforeach
                         </select>
                     </div>
-                    @if($data_pasien->masalah_keperawatan != null)
-                    <div class="w-full lg:col-span-2">  
-                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">SLKI</label>                      
-                        <div class="bg-white rounded-lg p-4 shadow">
-                            {!!$data_pasien->diagnosis->slki!!}
-                        </div>
-                    </div>
-                    <div class="w-full lg:col-span-2">      
-                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervensi / SIKI</label>                                        
-                        <div class="bg-white rounded-lg p-4 shadow">
-                            {!!$data_pasien->diagnosis->intervensi!!}
-                        </div>
-                    </div>
-                    @endif
                 </div>
             </div>
 
@@ -633,23 +625,23 @@
                     
                     <div class="w-full">
                         <label for="nama_pasien" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama Pasien</label>
-                        <input type="text" name="nama_pasien" id="nama_pasien" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('nama_pasien', $data_pasien->nama_pasien)}}" disabled placeholder="Nama pasien" required="">
+                        <input type="text" name="nama_pasien" id="nama_pasien" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('nama_pasien', $data_pasien->nama_pasien)}}" disabled placeholder="Nama pasien" >
                     </div>
                     <div class="w-full">
                         <label for="no_rm" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">No. RM</label>
-                        <input type="text" name="no_rm" id="no_rm" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('no_rm', $data_pasien->no_rm)}}" disabled placeholder="No. RM" required="">
+                        <input type="text" name="no_rm" id="no_rm" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('no_rm', $data_pasien->no_rm)}}" disabled placeholder="No. RM" >
                     </div>
                     <div class="w-full">
                         <label for="tgl_lahir" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tanggal Lahir</label>
-                        <input type="date" name="tgl_lahir" id="tgl_lahir" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('tgl_lahir', $data_pasien->tgl_lahir)}}" disabled placeholder="Tanggal lahir pasien" required="">
+                        <input type="date" name="tgl_lahir" id="tgl_lahir" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('tgl_lahir', $data_pasien->tgl_lahir)}}" disabled placeholder="Tanggal lahir pasien" >
                     </div>
                     <div class="w-full">
                         <label for="diagnosa_medis" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Diagnosa Medis</label>
-                        <input type="text" name="diagnosa_medis" id="diagnosa_medis" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('diagnosa_medis', $data_pasien->diagnosa_medis)}}" disabled placeholder="Diagnosa medis pasien" required="">
+                        <input type="text" name="diagnosa_medis" id="diagnosa_medis" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('diagnosa_medis', $data_pasien->diagnosa_medis)}}" disabled placeholder="Diagnosa medis pasien" >
                     </div>
                     <div class="w-full">
                         <label for="ruang_rawat" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ruang Rawat</label>
-                        <input type="text" name="ruang_rawat" id="ruang_rawat" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('ruang_rawat', $data_pasien->ruang_rawat)}}" disabled placeholder="Ruang rawat" required="">
+                        <input type="text" name="ruang_rawat" id="ruang_rawat" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('ruang_rawat', $data_pasien->ruang_rawat)}}" disabled placeholder="Ruang rawat" >
                     </div>
                     <div class="w-full">
                         <label for="pendidikan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pendidikan</label>
@@ -667,11 +659,11 @@
                     </div>
                     <div class="w-full">
                         <label for="tgl_masuk" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tanggal Masuk</label>
-                        <input type="date" name="tgl_masuk" id="tgl_masuk" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('tgl_masuk', $data_pasien->tgl_masuk)}}" disabled placeholder="Tanggal masuk" required="">
+                        <input type="date" name="tgl_masuk" id="tgl_masuk" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('tgl_masuk', $data_pasien->tgl_masuk)}}" disabled placeholder="Tanggal masuk" >
                     </div>
                     <div class="w-full">
                         <label for="tgl_assessment" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tanggal Assessment</label>
-                        <input type="date" name="tgl_assessment" id="tgl_assessment" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('tgl_assessment', $data_pasien->tgl_assessment)}}" disabled placeholder="Tanggal assessment" required="">
+                        <input type="date" name="tgl_assessment" id="tgl_assessment" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('tgl_assessment', $data_pasien->tgl_assessment)}}" disabled placeholder="Tanggal assessment" >
                     </div>
                 </div>
             </div>
@@ -682,11 +674,11 @@
                     
                     <div class="w-full">
                         <label for="keluhan_utama" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Keluhan Utama</label>
-                        <input type="text" name="keluhan_utama" id="keluhan_utama" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('keluhan_utama', $data_pasien->keluhan_utama)}}" disabled placeholder="Keluhan utama pasien" required="">
+                        <input type="text" name="keluhan_utama" id="keluhan_utama" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('keluhan_utama', $data_pasien->keluhan_utama)}}" disabled placeholder="Keluhan utama pasien" >
                     </div>
                     <div class="w-full">
                         <label for="riwayat_kesehatan_sekarang" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Riwayat Kesehatan Sekarang</label>
-                        <input type="text" name="riwayat_kesehatan_sekarang" id="riwayat_kesehatan_sekarang" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('riwayat_kesehatan_sekarang', $data_pasien->riwayat_kesehatan_sekarang)}}" disabled placeholder="Riwayat kesehatan pasien sekarang" required="">
+                        <input type="text" name="riwayat_kesehatan_sekarang" id="riwayat_kesehatan_sekarang" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('riwayat_kesehatan_sekarang', $data_pasien->riwayat_kesehatan_sekarang)}}" disabled placeholder="Riwayat kesehatan pasien sekarang" >
                     </div>
                     <div class="w-full">
                         <label for="penyakit_genetik" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Penyakit Genetik</label>
@@ -726,7 +718,7 @@
                     </div>
                     <div class="w-full">
                         <label for="riwayat_kesehatan_keluarga" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Riwayat Kesehatan Keluarga</label>
-                        <input type="text" name="riwayat_kesehatan_keluarga" id="riwayat_kesehatan_keluarga" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('riwayat_kesehatan_keluarga', $data_pasien->riwayat_kesehatan_keluarga)}}" disabled placeholder="Riwayat kesehatan keluarga pasien" required="">
+                        <input type="text" name="riwayat_kesehatan_keluarga" id="riwayat_kesehatan_keluarga" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('riwayat_kesehatan_keluarga', $data_pasien->riwayat_kesehatan_keluarga)}}" disabled placeholder="Riwayat kesehatan keluarga pasien" >
                     </div>
                     <div class="w-full">
                         <label for="auto_anamnesa_pasien" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Auto Anamnesa Pasien</label>
@@ -737,7 +729,7 @@
                     </div>
                     <div class="w-full">
                         <label for="nama_pemberi_informasi" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama Pemberi Informasi</label>
-                        <input type="text" name="nama_pemberi_informasi" id="nama_pemberi_informasi" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('nama_pemberi_informasi', $data_pasien->nama_pemberi_informasi)}}" disabled placeholder="Nama Pemberi Informasi" required="">
+                        <input type="text" name="nama_pemberi_informasi" id="nama_pemberi_informasi" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('nama_pemberi_informasi', $data_pasien->nama_pemberi_informasi)}}" disabled placeholder="Nama Pemberi Informasi" >
                     </div>
                 </div>
             </div>
@@ -757,7 +749,7 @@
                         <input type="text" name="lama_batuk" id="lama_batuk" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('lama_batuk', $data_pasien->lama_batuk)}}" disabled placeholder="Kosongkan bila pasien tidak menderita batuk">
                     </div>
                     <div class="w-full">
-                        <label for="sputum" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Terdapat Sputum?</label>
+                        <label for="sputum" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sputum?</label>
                         <select disabled  id="sputum" name="sputum" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
                             <option value="Tidak" selected>Tidak</option>
                             <option value="Ya">Ya</option>
@@ -792,27 +784,27 @@
                     </div>
                     <div class="w-full">
                         <label for="tekanan_darah" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tekanan Darah Pasien</label>
-                        <input type="text" name="tekanan_darah" id="tekanan_darah" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('tekanan_darah', $data_pasien->tekanan_darah)}}" disabled placeholder="Tekanan Darah Pasien" required>
+                        <input type="text" name="tekanan_darah" id="tekanan_darah" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('tekanan_darah', $data_pasien->tekanan_darah)}}" disabled placeholder="Tekanan Darah Pasien" >
                     </div>
                     <div class="w-full">
                         <label for="suhu" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Suhu Tubuh Pasien</label>
-                        <input type="text" name="suhu" id="suhu" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('suhu', $data_pasien->suhu)}}" disabled placeholder="Suhu Tubuh Pasien" required>
+                        <input type="text" name="suhu" id="suhu" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('suhu', $data_pasien->suhu)}}" disabled placeholder="Suhu Tubuh Pasien" >
                     </div>
                     <div class="w-full">
                         <label for="nadi" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Denyut Nadi Pasien</label>
-                        <input type="text" name="nadi" id="nadi" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('nadi', $data_pasien->nadi)}}" disabled placeholder="Denyut Nadi Pasien" required>
+                        <input type="text" name="nadi" id="nadi" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('nadi', $data_pasien->nadi)}}" disabled placeholder="Denyut Nadi Pasien" >
                     </div>
                     <div class="w-full">
-                        <label for="pernapasan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pernapasan Pasien</label>
-                        <input type="text" name="pernapasan" id="pernapasan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('pernapasan', $data_pasien->pernapasan)}}" disabled placeholder="Pernapasan Pasien" required>
+                        <label for="pernapasan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Frekuensi Nyeri</label>
+                        <input type="text" name="pernapasan" id="pernapasan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('pernapasan', $data_pasien->pernapasan)}}" disabled placeholder="Pernapasan Pasien" >
                     </div>
                     <div class="w-full">
                         <label for="spo2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">SPO2</label>
-                        <input type="text" name="spo2" id="spo2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('spo2', $data_pasien->spo2)}}" disabled placeholder="SPO2" required>
+                        <input type="text" name="spo2" id="spo2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('spo2', $data_pasien->spo2)}}" disabled placeholder="SPO2" >
                     </div>
                     <div class="w-full">
                         <label for="crt" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">CRT</label>
-                        <input type="text" name="crt" id="crt" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('crt', $data_pasien->crt)}}" disabled placeholder="CRT" required>
+                        <input type="text" name="crt" id="crt" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('crt', $data_pasien->crt)}}" disabled placeholder="CRT">
                     </div>
                     <div class="w-full">
                         <label for="akral" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Akral</label>
@@ -873,11 +865,11 @@
                     </div>
                     <div class="w-full">
                         <label for="tb" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tinggi Badan</label>
-                        <input type="text" name="tb" id="tb" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('tb', $data_pasien->tb)}}" disabled placeholder="Tinggi badan pasien" required>
+                        <input type="text" name="tb" id="tb" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('tb', $data_pasien->tb)}}" disabled placeholder="Tinggi badan pasien" >
                     </div>
                     <div class="w-full">
                         <label for="bb" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Berat Badan</label>
-                        <input type="text" name="bb" id="bb" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('bb', $data_pasien->bb)}}" disabled placeholder="Berat badan pasien" required>
+                        <input type="text" name="bb" id="bb" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('bb', $data_pasien->bb)}}" disabled placeholder="Berat badan pasien" >
                     </div>
                     <div class="w-full">
                         <label for="imt" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">IMT</label>
@@ -931,11 +923,11 @@
                     </div>
                     <div class="w-full">
                         <label for="pola_tidur" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pola Tidur</label>
-                        <input type="text" name="pola_tidur" id="pola_tidur" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('pola_tidur', $data_pasien->pola_tidur)}}" disabled placeholder="Pola Tidur Pasien" required>
+                        <input type="text" name="pola_tidur" id="pola_tidur" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('pola_tidur', $data_pasien->pola_tidur)}}" disabled placeholder="Pola Tidur Pasien" >
                     </div>
                     <div class="w-full">
                         <label for="durasi_tidur" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Durasi Tidur</label>
-                        <input type="text" name="durasi_tidur" id="durasi_tidur" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('durasi_tidur', $data_pasien->durasi_tidur)}}" disabled placeholder="Durasi Tidur Pasien" required>
+                        <input type="text" name="durasi_tidur" id="durasi_tidur" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('durasi_tidur', $data_pasien->durasi_tidur)}}" disabled placeholder="Durasi Tidur Pasien" >
                     </div>
                     <div class="w-full">
                         <label for="gangguan_tidur" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Gangguan Tidur</label>
@@ -1016,15 +1008,15 @@
                 <div class="grid gap-4 lg:grid-cols-2 sm:gap-6">
                     <div class="w-full">
                         <label for="pekerjaan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Status Pekerjaan Pasien</label>
-                        <input type="text" name="pekerjaan" id="pekerjaan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('pekerjaan', $data_pasien->pekerjaan)}}" disabled placeholder="Status Pekerjaan Pasien" required>
+                        <input type="text" name="pekerjaan" id="pekerjaan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('pekerjaan', $data_pasien->pekerjaan)}}" disabled placeholder="Status Pekerjaan Pasien" >
                     </div>
                     <div class="w-full">
                         <label for="pembiayaan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pembiayaan / Jaminan Kesehatan</label>
-                        <input type="text" name="pembiayaan" id="pembiayaan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('pembiayaan', $data_pasien->pembiayaan)}}" disabled placeholder="Pembiayaan / Jaminan Kesehatan" required>
+                        <input type="text" name="pembiayaan" id="pembiayaan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('pembiayaan', $data_pasien->pembiayaan)}}" disabled placeholder="Pembiayaan / Jaminan Kesehatan" >
                     </div>
                     <div class="w-full">
                         <label for="pj_pasien" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Penanggung Jawab Pasien</label>
-                        <input type="text" name="pj_pasien" id="pj_pasien" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('pj_pasien', $data_pasien->pj_pasien)}}" disabled placeholder="Penanggung Jawab Pasien" required>
+                        <input type="text" name="pj_pasien" id="pj_pasien" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('pj_pasien', $data_pasien->pj_pasien)}}" disabled placeholder="Penanggung Jawab Pasien" >
                     </div>
                 </div>
             </div>
@@ -1077,7 +1069,12 @@
                     </div>
                     <div class="w-full">
                         <label for="skala_nyeri" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Skala Nyeri</label>
-                        <input type="text" name="skala_nyeri" id="skala_nyeri" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('skala_nyeri', $data_pasien->skala_nyeri)}}" disabled placeholder="Kosongkan bila tidak ada">
+                        <select disabled id="skala_nyeri" name="skala_nyeri" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                            <option value="0" selected>0</option>
+                            @for($i=1;$i<=10;$i++)
+                            <option @if($data_pasien->skala_nyeri == $i) selected @endif value="{{$i}}">{{$i}}</option>
+                            @endfor
+                        </select>
                     </div>
                     <div class="w-full">
                         <label for="durasi_nyeri" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Durasi Nyeri</label>
@@ -1159,19 +1156,19 @@
                 <div class="grid gap-4 lg:grid-cols-2 sm:gap-6">
                     <div class="w-full">
                         <label for="data_subjektif" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Data Subjektif</label>
-                        <input type="text" name="data_subjektif" id="data_subjektif" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('data_subjektif', $data_pasien->data_subjektif)}}" disabled placeholder="Hasil Analisis Data Subjektif" required>
+                        <input type="text" name="data_subjektif" id="data_subjektif" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('data_subjektif', $data_pasien->data_subjektif)}}" disabled placeholder="Hasil Analisis Data Subjektif" >
                     </div>
                     <div class="w-full">
                         <label for="data_objektif" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Data Objektif</label>
-                        <input type="text" name="data_objektif" id="data_objektif" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('data_objektif', $data_pasien->data_objektif)}}" disabled placeholder="Hasil Analisis Data Objektif" required>
+                        <input type="text" name="data_objektif" id="data_objektif" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('data_objektif', $data_pasien->data_objektif)}}" disabled placeholder="Hasil Analisis Data Objektif" >
                     </div>
                     <div class="w-full">
                         <label for="penyebab_etiologi" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Penyebab Etiologi</label>
-                        <input type="text" name="penyebab_etiologi" id="penyebab_etiologi" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('penyebab_etiologi', $data_pasien->penyebab_etiologi)}}" disabled placeholder="Hasil Analisis Penyebab Etiologi" required>
+                        <input type="text" name="penyebab_etiologi" id="penyebab_etiologi" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('penyebab_etiologi', $data_pasien->penyebab_etiologi)}}" disabled placeholder="Hasil Analisis Penyebab Etiologi" >
                     </div>
                     <div class="w-full">
                         <label for="masalah" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Masalah Pada Pasien</label>
-                        <input type="text" name="masalah" id="masalah" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('masalah', $data_pasien->masalah)}}" disabled placeholder="Hasil Analisis Masalah Pasien" required>
+                        <input type="text" name="masalah" id="masalah" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="{{old('masalah', $data_pasien->masalah)}}" disabled placeholder="Hasil Analisis Masalah Pasien" >
                     </div>
                 </div>
             </div>
@@ -1209,30 +1206,12 @@
                     </div>
                     <div class="w-full">
                         <label for="masalah_keperawatan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Diagnosa Pasien</label>
-                        <select disabled  id="masalah_keperawatan" name="masalah_keperawatan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                            <option disabled selected>Pilih diagnosa:</option>
-                            @foreach($kategori_masalah as $row)
-                            <option disabled class="capitalize font-bold">{{$row->nama}}</option>
-                            @foreach($row->item as $item)
-                            <option @if($data_pasien->masalah_keperawatan == $item->kode) selected @endif value="{{$item->kode}}" class="capitalize">{{$item->kode." - ".$item->nama}}</option>
-                            @endforeach
-                            @endforeach
-                        </select>
+                        <ul>
+                        @foreach($diagnosa as $item)
+                            <li>{{$item->kode.' - '.$item->nama}}</li>
+                        @endforeach
+                        </ul>
                     </div>
-                    @if($data_pasien->masalah_keperawatan != null)
-                    <div class="w-full lg:col-span-2">  
-                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">SLKI</label>                      
-                        <div class="bg-white rounded-lg p-4 shadow">
-                            {!!$data_pasien->diagnosis->slki!!}
-                        </div>
-                    </div>
-                    <div class="w-full lg:col-span-2">      
-                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervensi / SIKI</label>                                        
-                        <div class="bg-white rounded-lg p-4 shadow">
-                            {!!$data_pasien->diagnosis->intervensi!!}
-                        </div>
-                    </div>
-                    @endif
                 </div>
             </div>
             <div class="w-full flex gap-2 justify-end">
@@ -1244,4 +1223,13 @@
         @endif
     </div>
   </section>
+@endsection
+
+@section('script')
+<script type="module">
+$(".select2-responsive").select2({
+    width: 'resolve' // need to override the changed default
+});
+</script>
+    
 @endsection

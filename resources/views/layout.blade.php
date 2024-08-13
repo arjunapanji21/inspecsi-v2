@@ -279,6 +279,28 @@
                   <span class="ml-3">Users</span>
                 </a>
               </li>
+              <li>
+                <a
+                  href="{{route('diagnosa')}}"
+                  class="flex items-center p-2 text-base font-medium rounded-lg transition duration-75 group @if($title == 'Diagnosa & Intervensi') text-white bg-primary-700 @else text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-800 dark:text-white @endif"
+                >
+                <svg
+                    aria-hidden="true"
+                    class="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span class="ml-3">Diagnosis</span>
+                </a>
+              </li>
               @endif
             </ul>
             <ul

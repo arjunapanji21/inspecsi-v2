@@ -39,6 +39,7 @@ return new class extends Migration
             $table->enum('catatan_perkembangan', ['Tidak Lengkap', 'Lengkap']);
             $table->enum('modifikasi_rencana_tindakan', ['Tidak Lengkap', 'Lengkap']);
             $table->bigInteger('score')->default(0);
+            $table->text('rekomendasi')->nullable();
             $table->timestamps();
         });
     }
